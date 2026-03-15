@@ -1,0 +1,47 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+ג&#39;ירפה היא הוצאה לאור בישראל המתמחה בהפיכת כתבי יד לספרים מרתקים. הוצאת ספרים עצמאית עם ליווי מקצועי מלא מהרעיון ועד המדף.
+
+### ספרים
+https://example.com/books
+עיינו בספרים חדשים להוצאת ג&#39;ירפה: רומנים, ספרי עיון, ספרות ילדים ועוד. כל ספר נבחר בקפידה ועבר עריכה מקצועית. הזמינו עכשיו!
+
+### אודות
+https://example.com/about
+הכירו את הוצאת ג&#39;ירפה - הוצאת ספרים ישראלית עצמאית המחוברת לסופרים ולקוראים. הערכים שלנו, הצוות המקצועי והחזון שמוביל אותנו קדימה.
+
+### צור קשר
+https://example.com/contact
+צרו קשר עם הוצאת ג&#39;ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
