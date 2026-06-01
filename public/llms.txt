@@ -28,6 +28,10 @@ https://example.com/menu-group-1780325902265
 https://example.com/contact
 צרו קשר עם הוצאת ג&#39;ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.
 
+### תפריט הבית
+https://example.com/menu
+ג'ירפה הוצאה לאור - תפריט הבית
+
 ## Legal & Policy
 
 ### Privacy Policy
@@ -57,11 +61,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `name` (text)
-  - `email` (email)
+  - `name` (text, required)
+  - `email` (email, required)
   - `phone` (tel)
-  - `message` (textarea)
-  - `privacy_consent` (checkbox)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
 
 ---
 
