@@ -218,14 +218,17 @@
 })();
 </script>
 <!-- End Zappy Analytics -->
-    <meta property="og:title" content="יש לכם כתב יד? בואו נדבר על הספר הבא שלכם — ג'ירפה">
-  <meta property="og:description" content="צרו קשר עם הוצאת ג'ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.">
-  <meta property="og:type" content="website">
+    <meta property="og:title" content="יש לכם כתב יד? בואו נדבר על הספר הבא שלכם — ג&#39;ירפה">
+    <meta property="og:description" content="צרו קשר עם הוצאת ג&#39;ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="יש לכם כתב יד? בואו נדבר על הספר הבא שלכם — ג&#39;ירפה">
+    <meta name="twitter:description" content="צרו קשר עם הוצאת ג&#39;ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.">
+    <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="יש לכם כתב יד? בואו נדבר על הספר הבא שלכם — ג'ירפה">
-  <meta name="twitter:description" content="צרו קשר עם הוצאת ג'ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.">
+  
+  
+  
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -243,6 +246,7 @@
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
     <link rel="stylesheet" href="/styles.css">
+    <script>window.ZAPPY_WEBSITE_ID = "c10655a5-4c4a-446c-8126-61db30b661eb"; window.ZAPPY_API_BASE = "https://api.zappy5.com";</script>
 
     <style id="zappy-dropdown-submenu-styles">
       /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
@@ -255,11 +259,14 @@
       /* Submenu item styling */
       .sub-menu li { list-style: none; margin: 0; padding: 0; }
       .sub-menu a { display: block !important; padding: 10px 16px !important; color: var(--text-dark, #333) !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu .zappy-nav-child > a { padding-left: 28px !important; font-size: 0.9em !important; opacity: 0.85 !important; }
+      [dir="rtl"] .sub-menu .zappy-nav-child > a, html[lang="he"] .sub-menu .zappy-nav-child > a, html[lang="ar"] .sub-menu .zappy-nav-child > a { padding-left: 10px !important; padding-right: 28px !important; }
+      .sub-menu .zappy-nav-parent > a { font-weight: 600 !important; }
       .sub-menu a:hover { background-color: #f5f5f5; }
       /* RTL (Hebrew/Arabic) dropdown positioning */
       [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
-      /* Hide empty dropdown menus */
-      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Hide empty dropdown menus (exclude catalog sub-menus that use <a> children instead of <li>) */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))):not(:has(> a)), .sub-menu:not(:has(li)):not(:has(> a)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
       /* Desktop: show submenu on Menu Group hover */
       li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
       /* Menu Group title styling */
@@ -268,7 +275,7 @@
       /* ========== MOBILE SUBMENU STYLES ========== */
       @media (max-width: 768px) {
         .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
-        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        .navbar .sub-menu.mobile-expanded, .nav-menu .sub-menu.mobile-expanded, #navMenu .sub-menu.mobile-expanded { max-height: none !important; overflow-y: visible !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
         [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
         /* Disable hover behavior on mobile */
         .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
@@ -281,43 +288,48 @@
         .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: auto !important; background: transparent !important; border: none !important; cursor: pointer !important; color: var(--text-dark) !important; position: static !important; flex-shrink: 0 !important; align-self: stretch !important; z-index: 2 !important; padding: 0 !important; margin: 0 !important; }
         .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
         .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
-        .sub-menu a { padding: 10px 0 !important; display: block !important; color: var(--text-dark) !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; color: var(--text-dark) !important; white-space: normal !important; }
+        .sub-menu .zappy-nav-child > a { padding-left: 28px !important; font-size: 0.9em !important; opacity: 0.85 !important; }
+        [dir="rtl"] .sub-menu .zappy-nav-child > a, html[lang="he"] .sub-menu .zappy-nav-child > a, html[lang="ar"] .sub-menu .zappy-nav-child > a { padding-left: 0 !important; padding-right: 28px !important; }
+        .sub-menu .zappy-nav-parent > a { font-weight: 600 !important; }
+        .nav-menu.active, #navMenu.active { max-width: 100vw !important; overflow-x: hidden !important; box-sizing: border-box !important; }
         .navbar .sub-menu li a, nav.navbar .sub-menu li a, .zappy-products-dropdown .sub-menu a { color: var(--text-dark) !important; }
       }
       @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
     </style>
 
-    <style id="mobile-lang-menu-deployed-css">
-    @media (max-width: 768px) {
-      .lang-switcher,
-      .nav-cta-container .lang-switcher,
-      .nav-container .lang-switcher,
-      .navbar .lang-switcher,
-      .navbar .nav-cta-container .lang-switcher,
-      .nav-icons-left .lang-switcher,
-      .nav-ecommerce-icons .lang-switcher { display: none !important; }
-      .mobile-lang-menu { width: 100%; border-top: 1px solid rgba(128,128,128,0.2); padding: 8px 0 0 0; margin-top: 8px; }
-      .mobile-lang-toggle { display: flex !important; align-items: center; justify-content: space-between; width: 100%; padding: 12px 16px; background: none; border: none; cursor: pointer; font-size: 15px; color: inherit; font-family: inherit; }
-      .mobile-lang-toggle::after { content: ''; display: inline-block; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform 0.3s ease; margin-left: 8px; }
-      .mobile-lang-toggle.expanded::after { transform: rotate(-135deg); }
-      .mobile-lang-options { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-      .mobile-lang-options.expanded { max-height: 300px; }
-      .mobile-lang-option { display: flex !important; align-items: center; gap: 10px; padding: 10px 24px; text-decoration: none; color: inherit; font-size: 14px; font-family: inherit; }
-      .mobile-lang-option:hover { background: rgba(128,128,128,0.1); }
-      .mobile-lang-option.active { font-weight: 600; opacity: 0.7; pointer-events: none; }
-      .mobile-lang-option img { width: 20px; height: 20px; border-radius: 50%; }
-    }
-    @media (min-width: 769px) {
-      .mobile-lang-menu { display: none !important; }
-    }
-    </style>
-
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -333,7 +345,7 @@
     </svg>
   </button>
   
-  <button class="phone-header-btn" data-phone="[business_phone]" aria-label="Call">
+  <button class="phone-header-btn" data-phone="0522351829" aria-label="Call">
     <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
@@ -736,7 +748,7 @@
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
         const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
-          : '[business_phone]';
+          : '052-2351829';
         
         window.location.href = 'tel:' + phoneNumber;
         console.log('[Navbar] Phone button clicked');
@@ -787,7 +799,7 @@
   <div class="contact-page-intro-container">
     <div class="contact-page-intro-header">
       <h1>צור קשר</h1>
-      <p class="contact-page-intro-lead">נשמח לשמוע ממך — בין אם יש בידך כתב יד שמחפש בית, בין אם אתה מעוניין בזכויות תרגום, או רק רוצה לשאול שאלה. ג'ירפה היא הוצאה לאור שמאמינה בשיח פתוח ובשיתופי פעולה משמעותיים.</p>
+      <p class="contact-page-intro-lead">נשמח לשמוע ממך — בין אם יש בידך כתב יד שמחפש בית, בין אם אתה מעוניין בזכויות תרגום, או רק רוצה לשאול שאלה. ג'ירפה הוצאה לאור היא הוצאה לאור שמאמינה בשיח פתוח ובשיתופי פעולה משמעותיים.</p>
     </div>
 
     <div class="contact-page-intro-info-grid">
@@ -825,12 +837,12 @@
           
           <div class="form-group">
             <label for="contact-email">דוא"ל</label>
-            <input type="email" id="contact-email" name="email" placeholder="[business_email]" required="">
+            <input type="email" id="contact-email" name="email" placeholder="veredmark@gmail.com" required="">
           </div>
           
           <div class="form-group">
             <label for="contact-phone">טלפון</label>
-            <input type="tel" id="contact-phone" name="phone" placeholder="[business_phone]">
+            <input type="tel" id="contact-phone" name="phone" placeholder="052-2351829">
           </div>
           
           <div class="form-group">
@@ -838,7 +850,15 @@
             <textarea id="contact-message" name="message" rows="5" required=""></textarea>
           </div>
           
-          <button type="submit" class="btn-submit">שלח</button>
+          <!-- privacy-consent-fix -->
+<div class="privacy-consent" style="color: var(--text-dark, #333)">
+  <label class="privacy-consent-label">
+    <input type="checkbox" name="privacy_consent" class="privacy-consent-checkbox" required />
+    <span>קראתי ואני מסכים/ה ל<a href="/terms" target="_blank">תנאי השימוש</a> ול<a href="/privacy" target="_blank">מדיניות הפרטיות</a></span>
+  </label>
+</div>
+<script data-privacy-consent-validation>(function(){if(window._zpcv)return;window._zpcv=1;var _l=document.documentElement.lang||"";var isHe=_l==="he"||(_l!=="ar"&&document.documentElement.dir==="rtl");var isAr=_l==="ar";var valMsg=isHe?"יש לאשר את תנאי השימוש ומדיניות הפרטיות":isAr?"يرجى الموافقة على الشروط والأحكام وسياسة الخصوصية":"Please accept the Terms & Conditions and Privacy Policy";var cbs=document.querySelectorAll(".privacy-consent-checkbox");cbs.forEach(function(cb){cb.setCustomValidity(cb.checked?"":valMsg);cb.addEventListener("change",function(){cb.setCustomValidity(cb.checked?"":valMsg)})});document.addEventListener("submit",function(e){var f=e.target;if(!f||f.tagName!=="FORM")return;var cb=f.querySelector(".privacy-consent-checkbox");if(!cb||cb.checked)return;e.preventDefault();e.stopImmediatePropagation();if(typeof window.zappyNotify==="function"){window.zappyNotify(valMsg,"error")}else if(typeof window.showNotification==="function"){window.showNotification(valMsg,"error")}else{var ex=document.querySelectorAll(".zappy-privacy-error");ex.forEach(function(el){el.remove()});var n=document.createElement("div");n.className="zappy-privacy-error";n.style.cssText="position:fixed;top:20px;right:20px;max-width:400px;padding:14px 18px;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:10000;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px";n.textContent=valMsg;document.body.appendChild(n);setTimeout(function(){if(n.parentElement)n.remove()},6000)}cb.focus()},true)})();</script>
+<button type="submit" class="btn-submit">שלח</button>
         </form>
       </div>
       
@@ -859,8 +879,8 @@
   <div class="contact-details-container">
     <div class="contact-details-content">
       <h2>דרכים נוספות ליצירת קשר</h2>
-      <p class="contact-email"><i class="fas fa-envelope" data-element-type="icon" data-icon-type="font-awesome"></i> לשאלות כלליות או פניות: <a href="mailto:[business_email]">[business_email]</a></p>
-      <p class="contact-phone"><i class="fas fa-phone" data-element-type="icon" data-icon-type="font-awesome"></i> ניתן להתקשר אלינו: <a href="tel:[business_phone]">[business_phone]</a></p>
+      <p class="contact-email"><i class="fas fa-envelope" data-element-type="icon" data-icon-type="font-awesome"></i> לשאלות כלליות או פניות: <a href="mailto:veredmark@gmail.com">veredmark@gmail.com</a></p>
+      <p class="contact-phone"><i class="fas fa-phone" data-element-type="icon" data-icon-type="font-awesome"></i> ניתן להתקשר אלינו: <a href="tel:052-2351829">052-2351829</a></p>
       <p class="contact-note">נשמח לקבוע פגישה באופן אישי – צרו קשר מראש ונתאם יחד זמן נוח.</p>
     </div>
     <div class="contact-details-imagery">
@@ -888,13 +908,13 @@
     
     <div class="contact-faq-list">
       <div class="contact-faq-item">
-        <h3 class="contact-faq-question">אילו ז'אנרים מתאימים להוצאת ג'ירפה?</h3>
+        <h3 class="contact-faq-question">אילו ז'אנרים מתאימים להוצאת ג'ירפה הוצאה לאור?</h3>
         <p class="contact-faq-answer">אנחנו מתמחים בספרות יפה, ספרי עיון איכוtiים, שירה, ספרי ילדים ונוער. אנחנו מחפשים קולות מקוריים שיש להם מה לומר ואיך לומר זאת באופן ייחודי. כל כתב יד שמגיע אלינו נבדק בקפידה, ואנחנו נותנים הזדמנות גם לסופרים חדשים וגם למחברים מנוסים שמחפשים בית חדש לעבודתם.</p>
       </div>
       
       <div class="contact-faq-item">
         <h3 class="contact-faq-question">האם אתם שוקלים ספרים מתורגמים?</h3>
-        <p class="contact-faq-answer">בהחלט! אנחנו מאמינים שתרגום איכותי הוא גשר בין תרבויות. אנחנו מחפשים יצירות בינלאומיות שמתאימות לרוח של ג'ירפה ולקהל הקוראים הישראלי, ועובדים עם מתרגמים מוכשרים כדי להביא את הטקסט בצורה הטובה ביותר. אם יש לך המלצה או הצעה לתרגום, נשמח לשמוע.</p>
+        <p class="contact-faq-answer">בהחלט! אנחנו מאמינים שתרגום איכותי הוא גשר בין תרבויות. אנחנו מחפשים יצירות בינלאומיות שמתאימות לרוח של ג'ירפה הוצאה לאור ולקהל הקוראים הישראלי, ועובדים עם מתרגמים מוכשרים כדי להביא את הטקסט בצורה הטובה ביותר. אם יש לך המלצה או הצעה לתרגום, נשמח לשמוע.</p>
       </div>
       
       <div class="contact-faq-item">
@@ -904,7 +924,7 @@
       
       <div class="contact-faq-item">
         <h3 class="contact-faq-question">איך בתי ספר או חנויות ספרים יכולים לקבל מידע נוסף?</h3>
-        <p class="contact-faq-answer">אנחנו עובדים בשיתוף פעולה הדוק עם בתי ספר, ספריות, וחנויות ספרים ברחבי הארץ. אם אתם מעוניינים לקבל קטלוג עדכני, להזמין כמויות, או לארגן מפגש עם מחברים שלנו, פשוט צרו איתנו קשר דרך הטופס למעלה או שלחו אימייל ל־[business_email]. נשמח לעזור ולספק את כל המידע הדרוש.</p>
+        <p class="contact-faq-answer">אנחנו עובדים בשיתוף פעולה הדוק עם בתי ספר, ספריות, וחנויות ספרים ברחבי הארץ. אם אתם מעוניינים לקבל קטלוג עדכני, להזמין כמויות, או לארגן מפגש עם מחברים שלנו, פשוט צרו איתנו קשר דרך הטופס למעלה או שלחו אימייל ל־veredmark@gmail.com. נשמח לעזור ולספק את כל המידע הדרוש.</p>
       </div>
     </div>
   </div>
@@ -931,9 +951,9 @@
       <div class="footer-column footer-contact">
         <h3 class="footer-title">יצירת קשר</h3>
         <ul class="contact-list">
-          <li><i class="fas fa-envelope"></i> <a href="mailto:[business_email]">[business_email]</a></li>
-          <li><i class="fas fa-phone"></i> <a href="tel:[business_phone]">[business_phone]</a></li>
-          <li><a href="/"><i class="fas fa-map-marker-alt"></i> <span>[business_address]</span></a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:veredmark@gmail.com">veredmark@gmail.com</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:052-2351829">052-2351829</a></li>
+          <li><a href="/"><i class="fas fa-map-marker-alt"></i> <span>511 מעוז, כברי, 2512000, ישראל</span></a></li>
         </ul>
       </div>
       
@@ -950,7 +970,7 @@
     <div class="footer-bottom">
       <div class="footer-bottom-content">
         <div class="copyright">
-          <p>© 2026 ג'ירפה. כל הזכויות שמורות.</p>
+          <p>© 2026 ג'ירפה הוצאה לאור. כל הזכויות שמורות.</p>
         </div>
         <div class="footer-legal">
           <a href="/privacy">מדיניות פרטיות</a>
@@ -1022,76 +1042,6 @@
           observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
         });
       }, 500);
-    })();
-    </script>
-
-    <script id="zappy-mobile-lang-menu-script">
-    (function() {
-      function initMobileLangMenu() {
-        if (window.innerWidth > 768) {
-          var existingMenu = document.querySelector('.mobile-lang-menu');
-          if (existingMenu) existingMenu.remove();
-          return;
-        }
-        if (document.querySelector('.mobile-lang-menu')) return;
-        var switcher = document.querySelector('.lang-switcher');
-        if (!switcher) return;
-        var dropdown = switcher.querySelector('.lang-switcher-dropdown');
-        if (!dropdown) return;
-        var options = dropdown.querySelectorAll('.lang-option');
-        if (options.length === 0) return;
-        var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu') || document.querySelector('nav ul');
-        if (!navMenu) return;
-        var currentLang = document.documentElement.lang || 'en';
-        var langConfigs = {
-          he: {name:'עברית',flag:'https://api.iconify.design/circle-flags/il.svg'},
-          en: {name:'English',flag:'https://api.iconify.design/circle-flags/us.svg'},
-          ar: {name:'العربية',flag:'https://api.iconify.design/circle-flags/sa.svg'},
-          fr: {name:'Français',flag:'https://api.iconify.design/circle-flags/fr.svg'},
-          es: {name:'Español',flag:'https://api.iconify.design/circle-flags/es.svg'},
-          de: {name:'Deutsch',flag:'https://api.iconify.design/circle-flags/de.svg'},
-          ru: {name:'Русский',flag:'https://api.iconify.design/circle-flags/ru.svg'},
-          zh: {name:'中文',flag:'https://api.iconify.design/circle-flags/cn.svg'},
-          ja: {name:'日本語',flag:'https://api.iconify.design/circle-flags/jp.svg'},
-          pt: {name:'Português',flag:'https://api.iconify.design/circle-flags/br.svg'},
-          it: {name:'Italiano',flag:'https://api.iconify.design/circle-flags/it.svg'},
-          ko: {name:'한국어',flag:'https://api.iconify.design/circle-flags/kr.svg'}
-        };
-        var container = document.createElement('div');
-        container.className = 'mobile-lang-menu';
-        var currentConfig = langConfigs[currentLang] || {name:currentLang,flag:''};
-        var toggleBtn = document.createElement('button');
-        toggleBtn.className = 'mobile-lang-toggle';
-        toggleBtn.type = 'button';
-        var currentFlagHtml = currentConfig.flag ? '<img src="' + currentConfig.flag + '" width="20" height="20" alt="" style="border-radius:50%;margin-right:8px;margin-left:8px;">' : '';
-        toggleBtn.innerHTML = currentFlagHtml + currentConfig.name;
-        container.appendChild(toggleBtn);
-        var optionsDiv = document.createElement('div');
-        optionsDiv.className = 'mobile-lang-options';
-        var currentLink = document.createElement('a');
-        currentLink.className = 'mobile-lang-option active';
-        currentLink.href = '#';
-        currentLink.innerHTML = currentFlagHtml + currentConfig.name;
-        optionsDiv.appendChild(currentLink);
-        options.forEach(function(opt) {
-          var link = document.createElement('a');
-          link.className = 'mobile-lang-option';
-          link.href = opt.getAttribute('href');
-          link.innerHTML = opt.innerHTML;
-          optionsDiv.appendChild(link);
-        });
-        container.appendChild(optionsDiv);
-        navMenu.appendChild(container);
-        toggleBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          toggleBtn.classList.toggle('expanded');
-          optionsDiv.classList.toggle('expanded');
-        });
-      }
-      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileLangMenu); }
-      else { initMobileLangMenu(); }
-      window.addEventListener('resize', function() { clearTimeout(window._mlrt); window._mlrt = setTimeout(initMobileLangMenu, 250); });
     })();
     </script>
 </body>

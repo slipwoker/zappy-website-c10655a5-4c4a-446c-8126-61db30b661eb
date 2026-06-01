@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# ג'ירפה הוצאה לאור — Generative Engine Optimization Map
+
+> יש לי הוצאת ספרים בשם ״ג׳ירפה״
 
 ---
 
@@ -36,12 +38,43 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- Email: veredmark@gmail.com
+- Phone: 052-2351829
+- Phone (tel): tel:0522351829
+- Address: 511 מעוז, כברי, 2512000, ישראל
+
+### Contact form
+- URL: https://example.com/contact
+- Endpoint: https://example.com/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+## About ג'ירפה הוצאה לאור
+יש לי הוצאת ספרים בשם ״ג׳ירפה״
+
+## Target Audience
+- קהילת קוראים נלהבים
+- מוסדות חינוך
+
+## Industry
+הוצאה לאור
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
