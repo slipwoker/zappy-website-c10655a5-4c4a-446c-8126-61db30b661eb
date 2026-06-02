@@ -6443,6 +6443,221 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     font-size: 0.75rem;
   }
 }
+
+/* AI-generated section */
+/* ============================================
+   Gallery Hero Strip — ג'ירפה הוצאה לאור
+   ============================================ */
+
+.giraffe-gallery-hero {
+  position: relative;
+  width: 100%;
+  min-height: 140px;
+  background-color: #2A2320;
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(143, 68, 43, 0.18) 0%,
+      rgba(42, 35, 32, 0.95) 40%,
+      rgba(42, 35, 32, 1) 100%
+    );
+  direction: rtl;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Subtle grain/texture overlay */
+.giraffe-gallery-hero__grain {
+  position: absolute;
+  inset: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* Warm left-edge glow accent */
+.giraffe-gallery-hero__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 60% 120% at 95% 50%,
+      rgba(143, 68, 43, 0.22) 0%,
+      transparent 70%
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Container */
+.giraffe-gallery-hero__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 48px 52px;
+  box-sizing: border-box;
+}
+
+/* Content wrapper */
+.giraffe-gallery-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Decorative accent line */
+.giraffe-gallery-hero__accent-line {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color, #8F442B) 0%,
+    #DDC8B0 100%
+  );
+  border-radius: 2px;
+  margin-bottom: 6px;
+  flex-shrink: 0;
+}
+
+/* Page title */
+.giraffe-gallery-hero__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: #F3E9DB;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Breadcrumb nav */
+.giraffe-gallery-hero__breadcrumb {
+  margin-top: 2px;
+}
+
+.giraffe-gallery-hero__breadcrumb-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.giraffe-gallery-hero__breadcrumb-item {
+  font-family: 'Source Sans 3', 'Open Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #B0967E;
+  letter-spacing: 0.03em;
+}
+
+.giraffe-gallery-hero__breadcrumb-item--current {
+  color: #DDC8B0;
+  font-weight: 500;
+}
+
+.giraffe-gallery-hero__breadcrumb-link {
+  color: #B0967E;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.giraffe-gallery-hero__breadcrumb-link:hover,
+.giraffe-gallery-hero__breadcrumb-link:focus {
+  color: #F3E9DB;
+  text-decoration: underline;
+  outline: none;
+}
+
+.giraffe-gallery-hero__breadcrumb-link:focus-visible {
+  outline: 2px solid var(--accent-color, #2F6FAD);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.giraffe-gallery-hero__breadcrumb-separator {
+  color: #6B5245;
+  font-size: 0.78rem;
+  user-select: none;
+  line-height: 1;
+}
+
+/* SVG bottom divider */
+.giraffe-gallery-hero__divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.giraffe-gallery-hero__divider-svg {
+  display: block;
+  width: 100%;
+  height: 54px;
+}
+
+/* ============================================
+   Responsive — Tablet
+   ============================================ */
+@media (max-width: 900px) {
+  .giraffe-gallery-hero__container {
+    padding: 24px 32px 50px;
+  }
+
+  .giraffe-gallery-hero__title {
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
+  }
+}
+
+/* ============================================
+   Responsive — Mobile
+   ============================================ */
+@media (max-width: 600px) {
+  .giraffe-gallery-hero {
+    min-height: 120px;
+  }
+
+  .giraffe-gallery-hero__container {
+    padding: 20px 20px 46px;
+  }
+
+  .giraffe-gallery-hero__title {
+    font-size: 1.7rem;
+  }
+
+  .giraffe-gallery-hero__accent-line {
+    width: 36px;
+    height: 2.5px;
+    margin-bottom: 4px;
+  }
+
+  .giraffe-gallery-hero__breadcrumb-item {
+    font-size: 0.78rem;
+  }
+
+  .giraffe-gallery-hero__divider-svg {
+    height: 38px;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
