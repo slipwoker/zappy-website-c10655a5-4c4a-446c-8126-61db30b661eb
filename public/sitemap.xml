@@ -19,18 +19,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/menu-group-1780325619464</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://example.com/menu-group-1780325902265</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://example.com/menu</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -40,6 +28,12 @@
     <loc>https://example.com/contact</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/professional-educational-track</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
