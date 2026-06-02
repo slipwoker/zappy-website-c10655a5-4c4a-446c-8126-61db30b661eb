@@ -14,23 +14,23 @@ https://example.com
 https://example.com/books
 עיינו בספרים חדשים להוצאת ג&#39;ירפה: רומנים, ספרי עיון, ספרות ילדים ועוד. כל ספר נבחר בקפידה ועבר עריכה מקצועית. הזמינו עכשיו!
 
+### Page
+https://example.com/menu-group-1780325619464
+
 ### הסיפור שלנו: איך ג&#39;ירפה הפכה לבית לסופרים ישראלים — ג&#39;ירפה
 https://example.com/about
 הכירו את הוצאת ג&#39;ירפה - הוצאת ספרים ישראלית עצמאית המחוברת לסופרים ולקוראים. הערכים שלנו, הצוות המקצועי והחזון שמוביל אותנו קדימה.
 
 ### Page
-https://example.com/menu-group-1780325619464
-
-### Page
 https://example.com/menu-group-1780325902265
-
-### יש לכם כתב יד? בואו נדבר על הספר הבא שלכם — ג&#39;ירפה
-https://example.com/contact
-צרו קשר עם הוצאת ג&#39;ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.
 
 ### תפריט הבית
 https://example.com/menu
 ג'ירפה הוצאה לאור - תפריט הבית
+
+### יש לכם כתב יד? בואו נדבר על הספר הבא שלכם — ג&#39;ירפה
+https://example.com/contact
+צרו קשר עם הוצאת ג&#39;ירפה לייעוץ חינם בנושא פרסום ספרים. נשמח לשמוע על הפרויקט שלכם ולהציע פתרונות הוצאה לאור מותאמים אישית.
 
 ## Legal & Policy
 
@@ -61,11 +61,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `name` (text, required)
-  - `email` (email, required)
+  - `name` (text)
+  - `email` (email)
   - `phone` (tel)
-  - `message` (textarea, required)
-  - `privacy_consent` (checkbox, required)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
 
 ---
 
