@@ -29,6 +29,9 @@ https://example.com/professional-educational-track
 https://example.com/moments-grid
 ג'ירפה הוצאה לאור - רגעים מהספרים ומהסטודיו
 
+### Page
+https://example.com/gallery
+
 ## Legal & Policy
 
 ### Privacy Policy
@@ -58,11 +61,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `name` (text, required)
-  - `email` (email, required)
+  - `name` (text)
+  - `email` (email)
   - `phone` (tel)
-  - `message` (textarea, required)
-  - `privacy_consent` (checkbox, required)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
 
 ---
 
