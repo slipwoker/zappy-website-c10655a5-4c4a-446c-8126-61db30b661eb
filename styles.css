@@ -6658,6 +6658,235 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     height: 38px;
   }
 }
+
+/* AI-generated section */
+/* ============================================
+   HERO TRACK STRIP — ג'ירפה הוצאה לאור
+   Professional & Educational Track Page Header
+   ============================================ */
+
+/* Google Fonts import for Source Sans 3 (used for breadcrumb) */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap');
+
+/* --- Root Section --- */
+.phero-track-strip {
+  position: relative;
+  width: 100%;
+  min-height: 145px;
+  background: #2A2320;
+  overflow: hidden;
+  direction: rtl;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --- Gradient overlay for depth --- */
+.phero-track-strip__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(143, 68, 43, 0.18) 0%,
+      rgba(42, 35, 32, 0.0) 45%,
+      rgba(47, 111, 173, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(42, 35, 32, 0.0) 0%,
+      rgba(20, 16, 14, 0.45) 100%
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* --- Subtle grain/texture overlay --- */
+.phero-track-strip__grain {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 80% 50%, rgba(143, 68, 43, 0.12) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* --- Container --- */
+.phero-track-strip__container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 48px 44px 48px;
+  box-sizing: border-box;
+}
+
+/* --- Content wrapper --- */
+.phero-track-strip__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* --- Accent line --- */
+.phero-track-strip__accent-line {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color, #8F442B) 0%, #DDC8B0 100%);
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+/* --- Page Title --- */
+.phero-track-strip__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F3E9DB;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+  /* Subtle warm highlight on text */
+  background: linear-gradient(135deg, #F3E9DB 60%, #DDC8B0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- Breadcrumb nav --- */
+.phero-track-strip__breadcrumb {
+  margin: 0;
+  padding: 0;
+}
+
+.phero-track-strip__breadcrumb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.phero-track-strip__breadcrumb-item {
+  font-family: 'Source Sans 3', 'Open Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: rgba(243, 233, 219, 0.55);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.phero-track-strip__breadcrumb-item--current {
+  color: rgba(221, 200, 176, 0.8);
+  font-weight: 600;
+}
+
+.phero-track-strip__breadcrumb-link {
+  color: rgba(243, 233, 219, 0.55);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.phero-track-strip__breadcrumb-link:hover,
+.phero-track-strip__breadcrumb-link:focus {
+  color: #DDC8B0;
+  text-decoration: underline;
+  outline: none;
+}
+
+.phero-track-strip__breadcrumb-link:focus-visible {
+  outline: 2px solid var(--accent-color, #2F6FAD);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.phero-track-strip__breadcrumb-separator {
+  font-size: 0.78rem;
+  color: rgba(243, 233, 219, 0.3);
+  user-select: none;
+  font-weight: 300;
+}
+
+/* --- SVG Wave Divider --- */
+.phero-track-strip__divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.phero-track-strip__divider-svg {
+  display: block;
+  width: 100%;
+  height: 54px;
+}
+
+/* ============================================
+   RESPONSIVE — Tablet
+   ============================================ */
+@media (max-width: 900px) {
+  .phero-track-strip__container {
+    padding: 24px 32px 42px 32px;
+  }
+
+  .phero-track-strip__title {
+    font-size: 1.75rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — Mobile
+   ============================================ */
+@media (max-width: 600px) {
+  .phero-track-strip {
+    min-height: 120px;
+  }
+
+  .phero-track-strip__container {
+    padding: 20px 20px 38px 20px;
+  }
+
+  .phero-track-strip__title {
+    font-size: 1.45rem;
+    letter-spacing: 0;
+  }
+
+  .phero-track-strip__accent-line {
+    width: 36px;
+    height: 2.5px;
+    margin-bottom: 2px;
+  }
+
+  .phero-track-strip__breadcrumb-item,
+  .phero-track-strip__breadcrumb-separator {
+    font-size: 0.76rem;
+  }
+
+  .phero-track-strip__divider-svg {
+    height: 36px;
+  }
+}
+
+@media (max-width: 380px) {
+  .phero-track-strip__title {
+    font-size: 1.25rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
