@@ -682,6 +682,179 @@
               });
             })();
           </script>
+        
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  direction: rtl;
+}
+
+.index-hero-section__bg-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.index-hero-section__bg-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.index-hero-section__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(42,35,32,0.70) 0%, rgba(42,35,32,0.35) 45%, rgba(42,35,32,0.55) 100%);
+}
+
+.index-hero-section__overlay {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.index-hero-section__content {
+  max-width: 620px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+}
+
+.index-hero-section__headline {
+  font-family: 'Fraunces', 'Noto Serif Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0 0 24px 0;
+  text-align: start;
+}
+
+.index-hero-section__subtitle {
+  font-family: 'Source Sans 3', 'Noto Sans', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin: 0 0 40px 0;
+  text-align: start;
+  opacity: 0.95;
+}
+
+.index-hero-section__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.index-hero-section__btn {
+  display: inline-block;
+  font-family: 'Source Sans 3', 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 28px;
+  border-radius: 6px;
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease, color 220ms ease, border-color 220ms ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.index-hero-section__btn--primary {
+  background: var(--primary);
+  color: #FFFFFF;
+  border-color: rgba(0,0,0,0.06);
+  box-shadow: 0 8px 18px rgba(42,35,32,0.22);
+}
+
+.index-hero-section__btn--primary:hover {
+  background: #C95F3E;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(42,35,32,0.30);
+}
+
+.index-hero-section__btn--ghost {
+  background: transparent;
+  color: var(--text-light);
+  border: 1px solid rgba(243,233,219,0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.index-hero-section__btn--ghost:hover {
+  background: rgba(243,233,219,0.12);
+  border-color: rgba(243,233,219,0.75);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+  }
+
+  .index-hero-section__overlay {
+    padding: 100px 20px 60px;
+    align-items: flex-end;
+    min-height: 100vh;
+  }
+
+  .index-hero-section__content {
+    max-width: 100%;
+    text-align: start;
+  }
+
+  .index-hero-section__headline {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .index-hero-section__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+  }
+
+  .index-hero-section__ctas {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .index-hero-section__btn {
+    width: 100%;
+    padding: 16px 24px;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
+</style>
     <link rel="stylesheet" href="/styles.css">
     <script>window.ZAPPY_WEBSITE_ID = "c10655a5-4c4a-446c-8126-61db30b661eb"; window.ZAPPY_API_BASE = "https://api.zappy5.com";</script>
 
@@ -1205,28 +1378,20 @@
       <path d="M0,60 L0,28 Q15,26 30,29 Q45,32 60,28 Q75,24 90,27 Q105,30 120,26 Q135,22 150,25 Q165,28 180,24 Q195,20 210,23 Q225,26 240,22 Q255,18 270,21 Q285,24 300,20 Q315,16 330,19 Q345,22 360,18 Q375,14 390,17 Q405,20 420,16 Q435,12 450,15 Q465,18 480,14 Q495,10 510,13 Q525,16 540,12 Q555,8 570,11 Q585,14 600,10 Q615,6 630,9 Q645,12 660,8 Q675,4 690,7 Q705,10 720,6 Q735,2 750,5 Q765,8 780,4 Q795,0 810,3 Q825,6 840,2 Q855,0 870,3 Q885,6 900,2 Q915,0 930,3 Q945,6 960,2 Q975,0 990,3 Q1005,6 1020,2 Q1035,0 1050,3 Q1065,6 1080,2 Q1095,0 1110,3 Q1125,6 1140,2 Q1155,0 1170,3 Q1185,6 1200,2 L1200,60 Z" fill="#2A2320"></path>
     </svg>
   </div>
-</section><section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" id="zappy-section-0-dup-1780394924416" style="--zappy-bg-overlay: rgba(42, 35, 32, 0.22); --zappy-bg-image: url(&quot;assets/business-general-hero-upload-1780326782408.webp&quot;); background-image: url(&quot;assets/business-general-hero-upload-1780394625550-i3q0fm.webp?v=1780394628147&quot;) !important; background-size: cover !important; background-position: 50% 50% !important; background-repeat: no-repeat; position: relative; overflow: hidden; " data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1780326782408.webp" data-zappy-bg-overlay-color="#2a2320" data-zappy-bg-overlay-opacity="22" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-content-align="center-mid-left" data-element-id="zappy-hero-bg-zappy-section-0" data-element-type="background-image" data-zappy-bg-position="50% 50%" data-zappy-bg-zoom="0.5">
-  <div class="index-hero-section__bg-wrapper" style="display: none;" data-zappy-original-bg="hidden">
-    <img data-hero-bg="true" data-placeholder="index-hero-bg" data-context="Warm natural light scene of hands gently holding an open book on a wooden table, creamy paper tones, shallow depth of field, soft focus on book pages with Hebrew text visible, cozy reading atmosphere, warm afternoon sunlight streaming through window, rustic wood grain texture, intimate and inviting publishing house aesthetic" width="1920" height="1080" src="/assets/business-general-hero-upload-1780394625550-i3q0fm.webp?v=1780394628147" alt="ידיים מחזיקות ספר פתוח על שולחן עץ באור טבעי חם" class="index-hero-section__bg-image" data-hero-background="true" data-element-type="image" data-element-id="img-1774252035424-zztcohol0" style="object-position: 50% 50%; object-fit: cover; width: 100%; height: 100%;" data-zappy-zoom="1">
+</section><section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" id="zappy-section-0-dup-1780394924416">
+  <div class="index-hero-section__bg-media">
+    <img data-hero-bg="true" data-context="A warm, inviting bookshop interior with wooden shelves filled with art books and design publications, soft window light, a comfortable reading nook with a leather armchair, and a small potted olive tree, shot on 50mm lens with shallow depth of field, editorial photography style" width="1200" height="600" src="/assets/section-בית-hero-index-hero-image-1.webp" alt="פנים חנות ספרים חמימה ומזמינה של הוצאת ג׳ירפה">
   </div>
-  
-  <div class="index-hero-section__scrim" aria-hidden="true" data-zappy-gradient-scrim="true" style="opacity: 1; display: none;" data-zappy-scrim-orig-opacity="" data-zappy-original-bg="hidden"></div>
-  
-  <div class="index-hero-section__content-wrapper" data-zappy-align-target="true" >
-    <div class="index-hero-section__overlay-card">
-      <h1 class="index-hero-section__title" >אנחנו הופכים מילים לספרים שנשארים.</h1>
-      <h3 class="index-hero-section__subtitle" >אנו מלווים אותך יד ביד לאורך כל התהליך - משלב הרעיון ועד לספר המודפס. כי עבורנו, כל ספר הוא מסע של יצירה, דיוק, ואהבה אמיתית למילה הכתובה</h3>
-      <div class="index-hero-section__cta-row">
-        <a href="#contact" class="index-hero-section__btn index-hero-section__btn--primary" data-element-type="button" data-element-id="btn-1774252035423-mi1tibmf8" data-native-element="true" style="outline: none; color: rgb(255, 255, 255) !important;">שיחה עם הצוות</a>
-        <a href="#books" class="index-hero-section__btn index-hero-section__btn--secondary" data-element-type="button" data-element-id="btn-1774252035423-kt7zsgxxe" data-native-element="true" style="outline: none;">לקטלוג הספרים</a>
+  <div class="index-hero-section__scrim"></div>
+  <div class="index-hero-section__overlay">
+    <div class="index-hero-section__content">
+      <h1 class="index-hero-section__headline">המילים שלך,<br>הבית שלהן</h1>
+      <h3 class="index-hero-section__subtitle">הוצאת ג'ירפה — מוציאים לאור ספרים שמרגישים כמו בית. עריכה אישית, עיצוב קפדני וליווי צמוד לאורך כל הדרך.</h3>
+      <div class="index-hero-section__ctas">
+        <a href="/contact" class="index-hero-section__btn index-hero-section__btn--primary">אני רוצה להוציא ספר</a>
+        <a href="/about" class="index-hero-section__btn index-hero-section__btn--ghost">הסיפור של ג'ירפה</a>
       </div>
     </div>
-  </div>
-  
-  <div class="index-hero-section__divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,60 L0,28 Q15,26 30,29 Q45,32 60,28 Q75,24 90,27 Q105,30 120,26 Q135,22 150,25 Q165,28 180,24 Q195,20 210,23 Q225,26 240,22 Q255,18 270,21 Q285,24 300,20 Q315,16 330,19 Q345,22 360,18 Q375,14 390,17 Q405,20 420,16 Q435,12 450,15 Q465,18 480,14 Q495,10 510,13 Q525,16 540,12 Q555,8 570,11 Q585,14 600,10 Q615,6 630,9 Q645,12 660,8 Q675,4 690,7 Q705,10 720,6 Q735,2 750,5 Q765,8 780,4 Q795,0 810,3 Q825,6 840,2 Q855,0 870,3 Q885,6 900,2 Q915,0 930,3 Q945,6 960,2 Q975,0 990,3 Q1005,6 1020,2 Q1035,0 1050,3 Q1065,6 1080,2 Q1095,0 1110,3 Q1125,6 1140,2 Q1155,0 1170,3 Q1185,6 1200,2 L1200,60 Z" fill="#2A2320"></path>
-    </svg>
   </div>
 </section><section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" id="zappy-section-0-dup-1780394959001" style="--zappy-bg-overlay: rgba(42, 35, 32, 0.22); --zappy-bg-image: url(&quot;assets/business-general-hero-upload-1780326782408.webp&quot;); background-image: url(&quot;assets/business-general-hero-upload-1780394625550-i3q0fm.webp?v=1780394628147&quot;) !important; background-size: cover !important; background-position: 50% 50% !important; background-repeat: no-repeat; position: relative; overflow: hidden; " data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1780326782408.webp" data-zappy-bg-overlay-color="#2a2320" data-zappy-bg-overlay-opacity="22" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-content-align="center-mid-left" data-element-id="zappy-hero-bg-zappy-section-0" data-element-type="background-image" data-zappy-bg-position="50% 50%" data-zappy-bg-zoom="0.5">
   <div class="index-hero-section__bg-wrapper" style="display: none;" data-zappy-original-bg="hidden">
