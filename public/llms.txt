@@ -25,10 +25,6 @@ https://example.com/contact
 ### Page
 https://example.com/professional-educational-track
 
-### גלריית רגעים מהספרים ומהסטודיו
-https://example.com/gallery
-ג'ירפה הוצאה לאור - גלריית רגעים מהספרים ומהסטודיו
-
 ## Legal & Policy
 
 ### Privacy Policy
