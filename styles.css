@@ -5698,6 +5698,254 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     font-size: 1.5rem;
   }
 }
+
+/* AI-generated section */
+/* ============================================
+   GIRAFA BOOKS PAGE — HERO STRIP
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+.girafa-books-hero-strip {
+  position: relative;
+  width: 100%;
+  min-height: 148px;
+  background: #2A2320;
+  background-image:
+    linear-gradient(135deg, rgba(143, 68, 43, 0.18) 0%, transparent 50%),
+    linear-gradient(225deg, rgba(47, 111, 173, 0.07) 0%, transparent 60%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.012) 2px,
+      rgba(255, 255, 255, 0.012) 4px
+    );
+  direction: rtl;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+/* Subtle radial glow from right side */
+.girafa-books-hero-strip__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 120% at 90% 50%, rgba(143, 68, 43, 0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 80% at 10% 50%, rgba(47, 111, 173, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Left vertical accent line */
+.girafa-books-hero-strip__accent-line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 40px;
+  width: 3px;
+  background: linear-gradient(180deg, transparent 0%, #8F442B 30%, #8F442B 70%, transparent 100%);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/* Container */
+.girafa-books-hero-strip__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 48px 16px 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Content block */
+.girafa-books-hero-strip__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+/* Breadcrumb */
+.girafa-books-hero-strip__breadcrumb ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.girafa-books-hero-strip__breadcrumb-link {
+  font-family: 'Source Sans 3', 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #DDC8B0;
+  text-decoration: none;
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.girafa-books-hero-strip__breadcrumb-link:hover,
+.girafa-books-hero-strip__breadcrumb-link:focus {
+  opacity: 1;
+  color: #F3E9DB;
+  outline: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.girafa-books-hero-strip__breadcrumb-link:focus-visible {
+  outline: 2px solid #8F442B;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.girafa-books-hero-strip__breadcrumb-separator {
+  font-family: 'Source Sans 3', 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #DDC8B0;
+  opacity: 0.4;
+  user-select: none;
+  padding: 0 2px;
+}
+
+.girafa-books-hero-strip__breadcrumb-current {
+  font-family: 'Source Sans 3', 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8F442B;
+  letter-spacing: 0.02em;
+}
+
+/* Page Title */
+.girafa-books-hero-strip__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #F3E9DB;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+/* Subtle underline accent on title */
+.girafa-books-hero-strip__title::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, #8F442B, rgba(143, 68, 43, 0.2));
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Decorative SVG book icon */
+.girafa-books-hero-strip__icon {
+  flex-shrink: 0;
+  opacity: 0.55;
+  transition: opacity 0.3s ease;
+}
+
+.girafa-books-hero-strip__icon:hover {
+  opacity: 0.75;
+}
+
+.girafa-books-hero-strip__svg-icon {
+  width: 58px;
+  height: 58px;
+  display: block;
+}
+
+/* Bottom SVG wave divider */
+.girafa-books-hero-strip__divider {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  line-height: 0;
+  display: block;
+  margin-top: auto;
+}
+
+.girafa-books-hero-strip__divider svg {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+/* ============================================
+   RESPONSIVE — TABLET
+   ============================================ */
+@media (max-width: 900px) {
+  .girafa-books-hero-strip__container {
+    padding: 24px 32px 14px 32px;
+  }
+
+  .girafa-books-hero-strip__title {
+    font-size: 2.2rem;
+  }
+
+  .girafa-books-hero-strip__svg-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE
+   ============================================ */
+@media (max-width: 600px) {
+  .girafa-books-hero-strip {
+    min-height: 120px;
+  }
+
+  .girafa-books-hero-strip__container {
+    padding: 20px 24px 12px 24px;
+    gap: 12px;
+  }
+
+  .girafa-books-hero-strip__title {
+    font-size: 1.9rem;
+  }
+
+  .girafa-books-hero-strip__breadcrumb-link,
+  .girafa-books-hero-strip__breadcrumb-current,
+  .girafa-books-hero-strip__breadcrumb-separator {
+    font-size: 12px;
+  }
+
+  .girafa-books-hero-strip__icon {
+    display: none;
+  }
+
+  .girafa-books-hero-strip__divider svg {
+    height: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .girafa-books-hero-strip__container {
+    padding: 18px 18px 10px 18px;
+  }
+
+  .girafa-books-hero-strip__title {
+    font-size: 1.65rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
