@@ -32,6 +32,9 @@ https://example.com/moments-grid
 ### Page
 https://example.com/gallery
 
+### Page
+https://example.com/new-page-1783356972687
+
 ## Legal & Policy
 
 ### Privacy Policy

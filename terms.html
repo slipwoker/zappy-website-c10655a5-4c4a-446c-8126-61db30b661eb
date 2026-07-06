@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -801,7 +806,7 @@
       <a href="/" class="logo-link">
         <img src="/assets/logo.webp" alt="ג'ירפה הוצאה לאור" class="logo">
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/about">אודות</a></li><li><a href="/books">ספרים</a></li><li><a href="/professional-educational-track" class="nav-link">מסלול מקצועי וחינוכי</a></li><li class="nav-cta-item-mobile"><a href="/contact">צור קשר</a></li><li><a href="/moments-grid" class="nav-link">רגעים</a></li><li><a href="/gallery" class="nav-link">גלריה</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/about">אודות</a></li><li><a href="/books">ספרים</a></li><li><a href="/professional-educational-track" class="nav-link">מסלול מקצועי וחינוכי</a></li><li class="nav-cta-item-mobile"><a href="/contact">צור קשר</a></li><li><a href="/moments-grid" class="nav-link">רגעים</a></li><li><a href="/gallery" class="nav-link">גלריה</a></li><li><a href="/new-page-1783356972687" class="nav-link">New Page</a></li></ul></div>
     
     
     
